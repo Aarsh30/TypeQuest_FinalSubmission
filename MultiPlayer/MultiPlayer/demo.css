@@ -111,7 +111,8 @@ body {
     font-size: 1.2rem;
     resize: none;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    
   }
   
   /* Navbar styles */
@@ -263,6 +264,13 @@ body {
   .dark-mode .text-display {
     color: #b18c8c;
   }
+
+  /* Dark mode styles */
+.dark-mode textarea {
+  background: #ffffff;
+  color: #000000;
+}
+
   
   .dark-mode footer {
     color: #000;

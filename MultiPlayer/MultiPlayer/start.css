@@ -94,7 +94,7 @@ body {
   }
   
   .content {
-    padding-top: 10rem;
+    
     max-width: 600px;
     margin: 0 auto;
   }
@@ -111,7 +111,7 @@ body {
   }
   
   .start-button {
-    margin-top: 30px;
+    margin-top: 5px;
   }
   
   button {

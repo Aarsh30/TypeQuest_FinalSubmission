@@ -23,6 +23,8 @@ a{
 }
 .current{
   color: #eeeeee;
+
+  
 }
 .center{
   text-align: center;
@@ -120,7 +122,8 @@ footer{
 }
 
 textarea{
-  background: #212121;
+  /* background: #212121; */
+  background: #0e78c9;
   border: solid, #52575d;
   border-width: 2px;
   border-radius: 10px;
@@ -270,6 +273,13 @@ button:hover {
 .dark-mode footer {
   color: #000;
 }
+
+/* Dark mode styles */
+.dark-mode textarea {
+  background: #ffffff;
+  color: #000000;
+}
+
 
 
 

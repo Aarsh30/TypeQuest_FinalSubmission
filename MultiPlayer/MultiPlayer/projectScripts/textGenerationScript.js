@@ -1,6 +1,10 @@
 // A bag of sentence to use when the api is down or the internet is down.
 const offlineSentences = [
 "Believe in yourself, and you'll conquer any typing challenge Embrace the keyboard, and let your words flow with precision Every keystroke counts, make each one a masterpiece.",
+"Believe in yourself and you'll be unstoppable Every day is a new opportunity to pursue your dreams Embrace failure as a stepping stone towards success You are the author of your own destiny, write a story worth telling.",
+"Challenge yourself, because that's where growth happens the change you wish to see in the world Success is not a destination; it's a journey of continuous improvement Never underestimate the power of perseverance and determination Surround yourself with positive influences that uplift and inspire you.",
+"Don't wait for the perfect moment; take the moment and make it perfect.",
+"The only limits that exist are the ones you place upon yourself.",
 
 ];
 
@@ -54,11 +58,18 @@ async function textGenerator() {
 // Return the a string from the api.
 function getRandomTextThroughApi() {
   let randomCategory = ["career", "dev", "food", "history", "science"][
-    (9 * Math.random()) << 0
+    (90 * Math.random()) << 0
   ];
   //  << refers to shifting one means it takes floor.
 
-  const apiUrl = `https://api.chucknorris.io/jokes/random?category=${randomCategory}`;
+   const apiUrl = `https://api.chucknorris.io/jokes/random?category=${randomCategory}`;
+
+  // const apiUrl =[
+  //   "sagnik aarka",
+  //   "aarsh patel",
+    
+  //   ];
+
 
   const controller = new AbortController();
   setTimeout(() => controller.abort(), 5000);

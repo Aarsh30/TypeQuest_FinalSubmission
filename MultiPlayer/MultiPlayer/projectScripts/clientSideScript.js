@@ -43,6 +43,29 @@ const hostAGame = () => {
   animItemChat.goToAndPlay(0, true); // to play the animation.
 };
 
+// const hostAGame = () => {
+//   let playerName = prompt("Enter your name:");
+//   if (!playerName) return; // Check if user clicked "Cancel" on the prompt
+
+//   // Taking input and storing it in a cookie.
+//   document.cookie = `name=${playerName}`;
+
+//   let roomName = playerName + "-" + playerName.length;
+//   // ? Important to host.
+//   socket.emit("hostingAGame", roomName, playerName, socket.id);
+
+//   // Clearing the selectionMenuContainer screen.
+//   selectionMenuContainer.style.display = "none";
+
+//   // Setting the room container.
+//   startGameButton.style.display = "inline-block";
+//   roomTitle.textContent = roomName;
+
+//   svgContainerChat.classList.remove("hide");
+//   animItemChat.goToAndPlay(0, true); // to play the animation.
+// };
+
+
 const joinAGame = () => {
   while (!playerName) playerName = prompt("Enter your name : ");
   document.cookie = `name=${playerName}`;
@@ -52,6 +75,20 @@ const joinAGame = () => {
   // ? Important to join.
   socket.emit("joiningAGame", roomName, playerName, socket.id);
 };
+
+// const joinAGame = () => {
+//   let playerName = prompt("Enter your name:");
+//   if (!playerName) return; // Check if user clicked "Cancel" on the prompt
+
+//   document.cookie = `name=${playerName}`;
+
+//   let roomName = prompt("Enter room name:");
+//   if (!roomName) return; // Check if user clicked "Cancel" on the prompt
+
+//   // Continue with the rest of the function if both prompts were answered
+//   socket.emit("joiningAGame", roomName, playerName, socket.id);
+// };
+
 
 socket.on("roomExists", () => {
   selectionMenuContainer.style.display = "none";
