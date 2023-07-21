@@ -1,0 +1,287 @@
+html{
+  background: #212121;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #212121;
+  color: #52575d;
+}
+
+a{
+  color: #52575d;
+}
+.yellow{
+  color: #ffd369;
+}
+.correct{
+  color: #29bb89;
+}
+.wrong{
+  color: #e84545;
+  text-decoration: underline;
+}
+.current{
+  color: #eeeeee;
+}
+.center{
+  text-align: center;
+}
+.if{
+  display: inline-flex;
+}
+
+.box {
+  max-width: 900px; 
+  height: 94vh;
+  padding: 0 30px;
+  
+}
+
+.container-fluid {
+  width: 100%;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* #heading{
+  align-self: left;
+  margin-top: 50px;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+} */
+.limits-box{
+  padding-top: 1.5rem;;
+  text-align: right;
+  margin: 0 35px 0 0 ;
+  font-size: 15px;
+}
+
+.stats{
+  margin: 10px auto 20px auto;
+}
+
+.details{
+  font-size: 6rem;
+}
+.stat-block{
+  padding: 0 30px;
+  min-width: 250px;
+}
+
+@media(max-width: 600px){
+  .details{
+    font-size: 5rem;
+  }
+  .stat-block{
+    min-width: 0;
+  }
+}
+
+.stat-name{
+  font-size: 1rem;
+  position: relative;
+  top: 45px;
+  right: 5px;
+}
+
+.text-display{
+  /* margin: 30px 30px 22px 0;
+  font-size: 21px;
+  text-align: center;
+  padding: 100px; */
+  margin: 30px 30px 22px 0;
+    font-size: 21px;
+    text-align: center;
+    min-height: 100px;
+}
+
+  /* min-height: 100px; */
+
+
+input:focus, textarea:focus, select:focus, a:focus{
+  outline: 0 ;
+}
+a:focus,a:hover{
+  color: #ffd369;
+  text-decoration: none;
+}
+
+footer{
+  padding: 20px;
+  font-size: 15px;
+  top: 100;
+}
+
+.restart-button{
+  padding: 10px;
+}
+
+textarea{
+  background: #212121;
+  border: solid, #52575d;
+  border-width: 2px;
+  border-radius: 10px;
+  color: #eeeeee;
+  padding: 10px;
+  font-size: 1.2rem;
+  resize: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin-right: 10px;
+  
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  padding: 10px;
+  cursor: pointer;
+  top: 0;
+  left: -10px; /* Move the slider to the left by 10px */
+  right: 10px;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: .4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+main {
+  margin-top: 80px;
+  text-align: center;
+}
+
+
+button:hover {
+  background-color: #0e78c9;
+}
+.dark-mode {
+  background: #fff; /* Change background color to white */
+  
+  color: #000000; /* Change text color to a dark color */
+}
+
+.dark-mode .navbar {
+  background-color: #333; /* Keep navbar background color dark */
+}
+
+.dark-mode h2 {
+  color: #000; /* Change heading color to white */
+}
+
+.dark-mode p {
+  color: #000000; /* Change paragraph text color to a light color */
+}
+
+.dark-mode button {
+  background-color: #2196F3; /* Keep button background color dark */
+}
+
+.dark-mode button:hover {
+  background-color: #0e78c9; /* Keep button hover color dark */
+}  
+
+/* Modified style for dark mode */
+.dark-mode body {
+  color: #000;
+}
+
+.dark-mode a {
+  color: #000;
+}
+
+.dark-mode .yellow {
+  color: #8ec3eb;
+}
+
+.dark-mode .correct {
+  color: darkgreen;
+}
+
+.dark-mode .wrong {
+  color: darkred;
+}
+
+.dark-mode .current {
+  color: #000000;
+}
+
+.dark-mode .stat-name {
+  color: #000;
+}
+
+.dark-mode .text-display {
+  color: #b18c8c;
+}
+
+.dark-mode footer {
+  color: #000;
+}
+
+
+
+/* modified style */
+h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  color: #ddd;
+}
+

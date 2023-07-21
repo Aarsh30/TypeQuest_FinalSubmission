@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waiting Page</title>
+  <link rel="icon" href="typing.png">
+
+    <!--Bootstrap 4 -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="demo.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="typing.png" alt="" width="30px" height="30px"><h1>Type Quest</h1>
+        <label class="switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider round"></span>
+        </label>
+        <!-- <label class="switch">
+          <span class="slider round">
+            <i class="fas fa-sun"></i> <!-- Sun icon -->
+            <!-- <i class="fas fa-moon"></i> <!-- Moon icon -->
+          <!-- </span>
+          <input type="checkbox" id="themeToggle">
+          
+        </label> --> 
+      </nav>
+  <div class="select">
+      <h1>Waiting for Other Players to Join</h1>
+      <div id="onlinePlayers">Number of online players: 1</div>
+      
+      <br>
+      <button class="start-button">Start</button>
+  </div>
+
+  <script>
+    // Replace 1 with the actual number of online players you want to display.
+    // You can update this value dynamically based on the number of connected players.
+    const onlinePlayersDiv = document.getElementById('onlinePlayers');
+    onlinePlayersDiv.innerText = `Number of online players: 1`;
+
+    // Add an event listener to the "Start" button
+    const startButton = document.querySelector('.start-button');
+    startButton.addEventListener('click', () => {
+      // Add your logic here to handle the "Start" button click action
+      // For example, you can redirect the user to the game page or perform other actions.
+      // Replace "game.html" with the actual URL of your game page.
+      window.location.href = 'game.html';
+    });
+    const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+themeToggle.addEventListener('change', () => {
+  body.classList.toggle('dark-mode', themeToggle.checked);
+});
+  </script>
+</body>
+</html>
