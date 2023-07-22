@@ -1,14 +1,14 @@
 # TypeQuest_FinalSubmission
 
-Developers Group in Code Brew 2023
+### Developers Group in Code Brew 2023
 
-## Team Members 
+## Team Members
+
 - Aarsh Patel
 - Sagnik Choudhury
 - Arka Lodh
 
 ## Project Screenshots
-
 
 ![alt text for screen readers](Assets/Front-page%20light.png)
 
@@ -28,10 +28,8 @@ Developers Group in Code Brew 2023
 
 ![alt text for screen readers](Assets/player-logs.png)
 
+## References
 
-
-
-## References  
 https://socket.io/
 
 https://codedamn.com/news/javascript/fix-require-is-not-defined
@@ -61,11 +59,3 @@ https://dev.to/valyouw/a-simple-multi-player-online-game-using-node-js-part-i-3g
 https://itnext.io/
 
 https://speed-typing-game-12.netlify.app/
-
-
-
-
-
-
-
-
