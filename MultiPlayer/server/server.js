@@ -8,11 +8,11 @@ http.listen(3000, () => {
   console.log("listen on the port.");
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../MultiPlayer/start.html"));
-});
+app.use(express.static("../MultiPlayer"));
 
-app.use(express.static(path.join(__dirname, "../Multiplayer")));
+app.get("/", (req, res) => {
+  res.render("/start.html");
+});
 
 const io = require("socket.io")(http);
 
@@ -139,23 +139,26 @@ io.on("connection", (socket) => {
   // });
 
   // * Hosting :
-socket.on("hostingAGame", (roomName, playerName) => {
-  socket.playerName = playerName;
-  socket.roomName = roomName;
+  socket.on("hostingAGame", (roomName, playerName) => {
+    socket.playerName = playerName;
+    socket.roomName = roomName;
 
-  var newRoom = new Room(roomName, playerName);
-  var newPlayer = new Player(playerName, socket.id); // Use socket.id for playerId
+    var newRoom = new Room(roomName, playerName);
+    var newPlayer = new Player(playerName, socket.id); // Use socket.id for playerId
 
-  rooms[roomName] = newRoom;
-  rooms[roomName].players[playerName] = newPlayer;
+    rooms[roomName] = newRoom;
+    rooms[roomName].players[playerName] = newPlayer;
 
-  // Joining the room.
-  socket.join(roomName);
+    // Joining the room.
+    socket.join(roomName);
 
-  // * Sending the join message to all other players.
-  io.to(socket.id).emit("chat-message", `Welcome to the group ${playerName} !`, "chat");
-});
-
+    // * Sending the join message to all other players.
+    io.to(socket.id).emit(
+      "chat-message",
+      `Welcome to the group ${playerName} !`,
+      "chat"
+    );
+  });
 
   // * Joining :
   socket.on("joiningAGame", (roomName, playerName, playerId) => {

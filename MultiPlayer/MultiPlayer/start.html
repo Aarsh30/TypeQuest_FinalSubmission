@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Type Quest</title>
-  <link rel="icon" href="typing.png"> 
-  <link rel="stylesheet" href="start.css">
-   <!-- Fonts -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
-   <!-- fontawesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
-<body>
-  <nav class="navbar">
-    <img src="typing.png" alt="" width="30px" height="30px"><h1>Type Quest</h1>
-    <label class="switch">
-      <input type="checkbox" id="themeToggle">
-      <span class="slider round"></span>
-    </label>
-  </nav>
+    <title>Type Quest App</title>
+    <link rel="icon" href="typing.png" />
+    <link rel="stylesheet" href="./start.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="typing.png" alt="" width="30px" height="30px" />
+      <h1>Type Quest</h1>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider round"></span>
+      </label>
+    </nav>
 
-  <main>
-    <div class="content">
-      <h2>Welcome to Type Quest</h2>
-      <img src="./typing.png" alt height="400px" width="400px">
-      <p>Improve your typing speed and accuracy with our typing test. Are you ready to begin?</p>
-    </div>
-    <div class="start-button">
+    <main>
+      <div class="content">
+        <h2>Welcome to Type Quest</h2>
+        <img src="./typing.png" alt height="400px" width="400px" />
+        <p>
+          Improve your typing speed and accuracy with our typing test. Are you
+          ready to begin?
+        </p>
+      </div>
+      <div class="start-button">
         <button id="startBtn" onclick="showOptions()">Start</button>
       </div>
 
-    <br>
-    <div id="options" style="display: none;">
+      <br />
+      <div id="options" style="display: none">
+        <button onclick="singlePlayer()">Single Player</button>
+        <button onclick="multiPlayer()">Multiplayer</button>
+      </div>
+    </main>
 
-      <button onclick="singlePlayer()">Single Player</button>
-      <button onclick="multiPlayer()">Multiplayer</button>
-    </div>
-  </main>
-
-  <script src="start.js"></script>
-</body>
+    <script src="start.js"></script>
+  </body>
 </html>

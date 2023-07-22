@@ -1,37 +1,35 @@
 # TypeQuest_FinalSubmission
 
-Developers Group in Code Brew 2023
+### Developers Group in Code Brew 2023
 
-## Team Members 
+## Team Members
+
 - Aarsh Patel
 - Sagnik Choudhury
 - Arka Lodh
 
 ## Project Screenshots
 
+![alt text for screen readers](Assets/Front-page%20light.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/Front-page%20light.png)
+![alt text for screen readers](Assets/front-page-dark.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/front-page-dark.png)
+![alt text for screen readers](Assets/multiplayer-main.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/multiplayer-main.png)
+![alt text for screen readers](Assets/multiplayer-1.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/multiplayer-1.png)
+![alt text for screen readers](Assets/multiplayer-2.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/multiplayer-2.png)
+![alt text for screen readers](Assets/multiplayer-3.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/multiplayer-3.png)
+![alt text for screen readers](Assets/multiplayer-4.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/multiplayer-4.png)
+![alt text for screen readers](Assets/multiplayer-5.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/multiplayer-5.png)
+![alt text for screen readers](Assets/player-logs.png)
 
-![alt text for screen readers](/TypeQuest_FinalSubmission/Assets/player-logs.png)
+## References
 
-
-
-
-## References  
 https://socket.io/
 
 https://codedamn.com/news/javascript/fix-require-is-not-defined
@@ -61,11 +59,3 @@ https://dev.to/valyouw/a-simple-multi-player-online-game-using-node-js-part-i-3g
 https://itnext.io/
 
 https://speed-typing-game-12.netlify.app/
-
-
-
-
-
-
-
-
