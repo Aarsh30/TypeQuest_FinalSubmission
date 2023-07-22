@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "./MultiPlayer/server/server.js" }
-  ]
-}
